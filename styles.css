@@ -30,7 +30,7 @@ nav {
 }
 
 section {
-    width: 80%; /* Not 85% to account for margin */
+    width: 80%; /* Not 85% to account for padding */
     float: left;
     padding:10px;
     font-family: sans-serif;
