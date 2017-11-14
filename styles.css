@@ -32,6 +32,11 @@ nav {
   color: #000000;
 }
 
+.homelink {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
 .review {
   vertical-align : middle;
 }
