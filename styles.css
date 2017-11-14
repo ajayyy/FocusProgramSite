@@ -36,6 +36,11 @@ nav {
   vertical-align : middle;
 }
 
+.award{
+  display: block;
+  margin: auto;
+}
+
 .content-wrapper{
   display: flex;
 }
