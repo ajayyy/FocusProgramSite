@@ -45,6 +45,11 @@ nav {
   vertical-align : middle;
 }
 
+.button {
+  vertical-align : middle;
+  margin: 0px 20px;
+}
+
 .award{
   display: block;
   margin: auto;
