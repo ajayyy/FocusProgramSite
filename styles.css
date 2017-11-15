@@ -33,7 +33,7 @@ nav {
   font-size: 100%;
 }
 
-.navlinks:hover {
+a:not(.homelink):hover {
   font-size: 110%;
 
   animation-name: grow, hues;
