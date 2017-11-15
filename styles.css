@@ -32,9 +32,35 @@ nav {
   color: #000000;
 }
 
+.navlinks: hover {
+  color: #000000;
+}
+
+@keyframes grow {
+  0%   {color: red;}
+  25%  {color: yellow;}
+  50%  {color: #00ffe8;}
+  75%  {color: #f5c807;}
+  100%  {color: red;}
+}
+
 .homelink {
   color: #FFFFFF;
   text-decoration: none;
+  font-size: 150%;
+
+  animation-name: hues;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes hues {
+  0%   {color: red;}
+  25%  {color: yellow;}
+  50%  {color: #00ffe8;}
+  75%  {color: #f5c807;}
+  100%  {color: red;}
 }
 
 .review {
