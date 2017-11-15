@@ -30,18 +30,26 @@ nav {
 
 .navlinks {
   color: #000000;
+  font-size: 100%;
 }
 
-.navlinks: hover {
-  color: #000000;
+.navlinks:hover {
+  font-size: 110%;
+
+  animation-name: grow, hues;
+  animation-duration: 0.1s, 2s;
+  animation-timing-function: linear, linear;
+  animation-iteration-count: 1, infinite;
+
+  -webkit-animation-name: grow, hues;
+  -webkit-animation-duration: 0.1s, 2s;
+  -webkit-animation-timing-function: linear, linear;
+  -webkit-animation-iteration-count: 1, infinite;
 }
 
 @keyframes grow {
-  0%   {color: red;}
-  25%  {color: yellow;}
-  50%  {color: #00ffe8;}
-  75%  {color: #f5c807;}
-  100%  {color: red;}
+  0%   {font-size: 100%;}
+  100%  {font-size: 110%;}
 }
 
 .homelink {
@@ -53,14 +61,89 @@ nav {
   animation-duration: 4s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+
+  -webkit--webkit-animation-name: hues;
+  -webkit-animation-duration: 4s;
+  -webkit--webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
 }
 
-@keyframes hues {
-  0%   {color: red;}
-  25%  {color: yellow;}
-  50%  {color: #00ffe8;}
-  75%  {color: #f5c807;}
-  100%  {color: red;}
+@-webkit-keyframes hues { /* from https://codepen.io/Bjornros/pen/wgdKXX*/
+  0% {
+    color: #A3F050;
+    color: hsl(89, 85%, 63%);  }
+  10% {
+    color: #53F050;
+    color: hsl(119, 85%, 63%);  }
+  20% {
+    color: #50F09D;
+    color: hsl(149, 85%, 63%);  }
+  30% {
+    color: #50F0EE;
+    color: hsl(179, 85%, 63%);  }
+  40% {
+    color: #50A3F0;
+    color: hsl(209, 85%, 63%);  }
+  50% {
+    color: #5053F0;
+    color: hsl(239, 85%, 63%);  }
+  60% {
+    color: #9D50F0;
+    color: hsl(269, 85%, 63%);  }
+  70% {
+    color: #EE50F0;
+    color: hsl(299, 85%, 63%);  }
+  80% {
+    color: #F050A3;
+    color: hsl(329, 85%, 63%);  }
+  90% {
+    color: #F05053;
+    color: hsl(359, 85%, 63%);  }
+  95% {
+    color: #F09D50;
+    color: hsl(29, 85%, 63%);  }
+  100% {
+    color: #A3F050;
+    color: hsl(89, 85%, 63%);  }
+}
+
+@keyframes hues { /* from https://codepen.io/Bjornros/pen/wgdKXX*/
+  0% {
+    color: #A3F050;
+    color: hsl(89, 85%, 63%);  }
+  10% {
+    color: #53F050;
+    color: hsl(119, 85%, 63%);  }
+  20% {
+    color: #50F09D;
+    color: hsl(149, 85%, 63%);  }
+  30% {
+    color: #50F0EE;
+    color: hsl(179, 85%, 63%);  }
+  40% {
+    color: #50A3F0;
+    color: hsl(209, 85%, 63%);  }
+  50% {
+    color: #5053F0;
+    color: hsl(239, 85%, 63%);  }
+  60% {
+    color: #9D50F0;
+    color: hsl(269, 85%, 63%);  }
+  70% {
+    color: #EE50F0;
+    color: hsl(299, 85%, 63%);  }
+  80% {
+    color: #F050A3;
+    color: hsl(329, 85%, 63%);  }
+  90% {
+    color: #F05053;
+    color: hsl(359, 85%, 63%);  }
+  95% {
+    color: #F09D50;
+    color: hsl(29, 85%, 63%);  }
+  100% {
+    color: #A3F050;
+    color: hsl(89, 85%, 63%);  }
 }
 
 .review {
